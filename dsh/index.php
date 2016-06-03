@@ -2,7 +2,6 @@
 
 	//import template to check if admin is logged in
 	require "adminCheck.php";
-	setcookie("loggedIn1234","",time()-3600);
 	
 	if($adminLoggedIn) {
 		//if they are, welcome them, echo headers for full admin page
