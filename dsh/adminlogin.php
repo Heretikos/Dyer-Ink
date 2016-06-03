@@ -41,6 +41,10 @@
 				margin:auto;
 				font-weight:bold;
 			}
+			h2 {
+				color:lime-green;
+				font-size:0.7em;
+			}
 		</style>
 	</head>
 	<body>
@@ -76,6 +80,12 @@
 			echo "username and password matched";
 			//If they match, set cookie, 
 			setcookie("loggedIn1234", "do not care", time() + (86400 * 30), "/");
+			
+			//accounce that the login was successful
+			echo "<h1>Login successful!</h1>";
+			
+			//redirect with javascript
+			echo "<script>window.location.href='index.php';</script>";
 			
 			//Then email login details (time, IP address) to admin@dyerink.com
 			$msg = "From IP: " . $_SERVER['REMOTE_ADDR'] . "\nWith username: $user and password $pass";
