@@ -2,7 +2,6 @@
 	//import headers, stylesheets etc.
 	
 	
-	
 	//Google Analytics
 	
 	
@@ -20,7 +19,7 @@
 	
 	//Bottom fixed footer, privacy policy link etc.
 	
-	
+	//Closing tags
 	
 	
 ?>
