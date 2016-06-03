@@ -76,7 +76,7 @@
 	
 ?>
 	<body>
-		Last login was from IP: 000.111.222.333
+		Last login was from IP: 192.168.1.1
 		<div class="adminNavigation">
 			<div class="adminNavButton">
 				<a href="inventory.php">
