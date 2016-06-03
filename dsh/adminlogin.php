@@ -18,7 +18,7 @@
 			  font-family: 'Wire One', sans-serif;
 			}
 			form {
-				width: 300px;
+				width: 500px;
 				margin: auto;
 				margin-top:15%;
 			}
