@@ -62,6 +62,9 @@
 		} 
 		echo "Connected successfully";
 	}
+	else {
+		echo "okay that didn't work";
+	}
 	
 	
 	
