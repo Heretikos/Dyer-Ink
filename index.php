@@ -15,5 +15,5 @@
 	
 	//Closing tags
 	
-	
+	echo "testing";
 ?>
