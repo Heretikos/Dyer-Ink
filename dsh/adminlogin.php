@@ -51,7 +51,7 @@
 		
 		
 		//Then, check against values in database 
-		require "mysqlcreds.php";
+		/*require "mysqlcreds.php";
 		
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$dbname);
@@ -59,11 +59,8 @@
 		// Check connection
 		if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
-		} 
+		} */
 		echo "Connected successfully";
-	}
-	else {
-		echo "okay that didn't work";
 	}
 	
 	
