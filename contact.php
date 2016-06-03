@@ -6,13 +6,16 @@
 	
 	//Otherwise, show the contact form <form action=(this page)>
 	
+	//Along with some inline CSS to set the class for the "custom item notice" in the footer
+	//to display:none;
+	
 	//Dropdown <select> with options for bug report, custom item request, or general (default)
 	
 	//Textarea for input
 	
 	//submit button for form
 	
-	//include footer details, but NOT the link to custom items(?)
+	//include footer details
 	
 
 ?>

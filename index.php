@@ -1,5 +1,3 @@
-<!-- Pseudocoding time! -->
-
 <?php
 	//import headers, stylesheets etc.
 	
