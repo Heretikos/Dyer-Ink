@@ -51,7 +51,7 @@
 		
 		
 		//Then, check against values in database 
-		/*require "mysqlcreds.php";
+		require "adminmysqlcreds.php";
 		
 		// Create connection
 		$conn = new mysqli($servername, $username, $password,$dbname);
@@ -59,15 +59,17 @@
 		// Check connection
 		if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
-		} */
+		} 
 		echo "Connected successfully";
+		
+		
+		//If they match, set cookie, echo login successful, and some inline javascript to
+		//reload the page. Then email login details (time, IP address) to admin@dyerink.com
 	}
 	
 	
 	
 	
-	//If they match, set cookie, echo login successful, and some inline javascript to
-	//reload the page. Then email login details (time, IP address) to admin@dyerink.com
 	
 	//If they don't match, log IP address, email login attempt details (including attempted
 	//password) to admin@dyerink. Then echo that the password or username was incorrect
