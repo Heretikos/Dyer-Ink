@@ -6,6 +6,7 @@
 <html>
 	<head>
 		<title>Administrator Login</title>
+		<link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			html { 
 			  background: url("http://www.superedo.net/fond-ecran/fond-ecran/Google%20Nexus/Google%20Nexus%205/google_nexus_5_088.jpg") no-repeat center center fixed; 
@@ -13,6 +14,8 @@
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
 			  background-size: cover;
+			  
+			  font-family: 'Wire One', sans-serif;
 			}
 			form .adminLogin{
 				width: 300px;
@@ -51,8 +54,8 @@
 ?>
 
 <form class="adminLogin" method="post" action="index.php">
-	<input type="text" />
-	<input type="password" />
+	Username: <input type="text" /> <br />
+	Password: <input type="password" />
 </form>
 
 <?php
