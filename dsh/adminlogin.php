@@ -20,11 +20,14 @@
 			form .adminLogin{
 				width: 300px;
 				margin: 0 auto;
+				color:white;
 			}
 			.adminLogin input {
 				border:1px solid white;
 				background-color:transparent;
 				color:white;
+				padding:10px;
+				margin:15px;
 			}
 		</style>
 	</head>
