@@ -21,6 +21,7 @@
 				width: 500px;
 				margin: auto;
 				margin-top:15%;
+				text-align:right;
 			}
 			.adminLogin input {
 				border:1px solid white;
@@ -31,7 +32,6 @@
 				font-size:1.7em;
 			}
 			.adminLogin input[type=submit] {
-				margin-left:100%;
 				padding:10px 32px;
 			}
 		</style>
