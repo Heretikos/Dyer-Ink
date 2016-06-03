@@ -1,3 +1,8 @@
+<?php
+
+	//echo admin login stylesheet, headers, title
+	
+?>
 <html>
 	<head>
 		<title>Administrator Login</title>
@@ -9,17 +14,21 @@
 			  -o-background-size: cover;
 			  background-size: cover;
 			}
+			form .adminLogin{
+				width: 300px;
+				margin: 0 auto;
+			}
+			.adminLogin input {
+				border:1px solid white;
+				background-color:transparent;
+				color:white;
+			}
 		</style>
 	</head>
 	<body>
-		
-	</body>
-</html>
 
 <?php
 
-	//echo admin login stylesheet, headers, title
-	
 	//Check if $_POST variables for login form are set
 	
 	
@@ -38,7 +47,19 @@
 	
 	
 	//If not, echo a basic form for login
+	
+?>
 
+<form class="adminLogin" method="post" action="index.php">
+	<input type="text" />
+	<input type="password" />
+</form>
 
+<?php
+
+	//closing tags
 
 ?>
+		
+	</body>
+</html>
