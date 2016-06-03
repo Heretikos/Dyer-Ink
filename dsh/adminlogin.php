@@ -19,7 +19,7 @@
 			}
 			form {
 				width: 300px;
-				margin: 0 auto;
+				margin: auto;
 				vertical-align:middle;
 			}
 			.adminLogin input {
