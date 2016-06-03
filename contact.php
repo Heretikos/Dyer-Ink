@@ -2,7 +2,7 @@
 
 	//require stylesheet, headers, navigation etc.
 
-	//If they just submitted a form, echo a template response
+	//If they just submitted a form, echo a template response and send the email
 	
 	//Otherwise, show the contact form <form action=(this page)>
 	
