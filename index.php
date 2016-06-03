@@ -6,13 +6,7 @@
 	
 	
 	
-	//Full page slider
-	
-	//H1 tag
-	
-	//buttons to access different pages
-	
-	//javascript (?) function to switch out content, backgrounds etc.
+	//Removed pseudocode until design is finalized
 	
 	
 	
