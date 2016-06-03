@@ -20,6 +20,7 @@
 			form {
 				width: 300px;
 				margin: auto;
+				margin-top:35%;
 				vertical-align:middle;
 			}
 			.adminLogin input {
@@ -59,7 +60,8 @@
 
 <form class="adminLogin" method="post" action="index.php">
 	<input type="text" placeholder="Username" /> <br />
-	<input type="password" placeholder="Password" />
+	<input type="password" placeholder="Password" /> <br />
+	<input type="submit" value="Login" />
 </form>
 
 <?php
