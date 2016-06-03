@@ -42,11 +42,29 @@
 
 	//Check if $_POST variables for login form are set
 	
+	if(isset($_POST['username']) && isset($_POST['pass'])) {
+		
+		//If so, sanitize inputs.
+		$user = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+		$pass = filter_var($_POST['pass'], FILTER_SANITIZE_STRING);
+		
+		
+		
+		//Then, check against values in database 
+		require "mysqlcreds.php";
+		
+		// Create connection
+		$conn = new mysqli($servername, $username, $password,$dbname);
+	
+		// Check connection
+		if ($conn->connect_error) {
+				die("Connection failed: " . $conn->connect_error);
+		} 
+		echo "Connected successfully";
+	}
 	
 	
-	//If so, sanitize inputs.
 	
-	//Then, check against values in database 
 	
 	//If they match, set cookie, echo login successful, and some inline javascript to
 	//reload the page. Then email login details (time, IP address) to admin@dyerink.com
@@ -62,8 +80,8 @@
 ?>
 
 <form class="adminLogin" method="post" action="index.php">
-	<input type="text" placeholder="Username" /> <br />
-	<input type="password" placeholder="Password" /> <br />
+	<input type="text" placeholder="Username" name="username" /> <br />
+	<input type="password" placeholder="Password" name="pass" /> <br />
 	<input type="submit" value="Login" />
 </form>
 
