@@ -1,5 +1,3 @@
-<!-- Pseudocode time -->
-
 <?php
 
 	//import template to check if admin is logged in

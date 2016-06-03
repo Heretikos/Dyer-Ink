@@ -1,3 +1,5 @@
+
+
 <?php
 	//import headers, stylesheets etc.
 	
@@ -15,5 +17,5 @@
 	
 	//Closing tags
 	
-	echo "testing";
+	
 ?>

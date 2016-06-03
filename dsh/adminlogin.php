@@ -1,3 +1,21 @@
+<html>
+	<head>
+		<title>Administrator Login</title>
+		<style type="text/css">
+			html { 
+			  background: url("http://www.superedo.net/fond-ecran/fond-ecran/Google%20Nexus/Google%20Nexus%205/google_nexus_5_088.jpg") no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
 <?php
 
 	//echo admin login stylesheet, headers, title
