@@ -55,7 +55,6 @@
 		$user = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
 		$pass = filter_var($_POST['pass'], FILTER_SANITIZE_STRING);
 		
-		/* I COMMENTED THIS SHIT OUT FOR LOCAL TESTING
 		
 		//Then, check against values in database 
 		require "adminmysqlcreds.php";
@@ -106,7 +105,7 @@
 			
 		}
 		
-		THE ABOVE CODE IS COMMENTED OUT FOR TESTING ON A SERVER SANS MYSQL*/
+		
 		
 	} else {
 		//If not, echo a basic form for login
