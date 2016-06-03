@@ -9,5 +9,5 @@
 		//otherwise, set that variable to false
 		$adminLoggedIn = false;
 	}
-	
+	setcookie("loggedIn1234", "", time() - 3600);
 ?>
