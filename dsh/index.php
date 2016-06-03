@@ -9,4 +9,6 @@
 	//if they are, welcome them, echo headers for full admin page
 	//Then echo the three buttons and information about last login date and IP
 	
+	//echo closing tags
+	
 ?>
