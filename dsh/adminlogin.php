@@ -17,10 +17,9 @@
 			  
 			  font-family: 'Wire One', sans-serif;
 			}
-			form .adminLogin{
+			form {
 				width: 300px;
 				margin: 0 auto;
-				color:white;
 			}
 			.adminLogin input {
 				border:1px solid white;
@@ -28,6 +27,7 @@
 				color:white;
 				padding:10px;
 				margin:15px;
+				font-size:2.5em;
 			}
 		</style>
 	</head>
@@ -57,8 +57,8 @@
 ?>
 
 <form class="adminLogin" method="post" action="index.php">
-	Username: <input type="text" /> <br />
-	Password: <input type="password" />
+	<input type="text" placeholder="Username" /> <br />
+	<input type="password" placeholder="Password" />
 </form>
 
 <?php
