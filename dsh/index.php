@@ -2,6 +2,7 @@
 
 	//import template to check if admin is logged in
 	
+	
 	//if they aren't, include the login form with all its glorious headers
 	require "adminlogin.php";
 	

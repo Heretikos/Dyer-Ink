@@ -76,13 +76,7 @@
 		if ($result->num_rows > 0) {
 			echo "username and password matched";
 			//If they match, set cookie, 
-			
-			
-			//echo login successful, 
-			
-			
-			//and some inline javascript to reload the page. 
-			
+			setcookie("loggedIn1234", "do not care", time() + (86400 * 30), "/");
 			
 			//Then email login details (time, IP address) to admin@dyerink.com
 			$msg = "From IP: " . $_SERVER['REMOTE_ADDR'] . "\nWith username: $user and password $pass";
