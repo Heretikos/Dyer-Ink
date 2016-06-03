@@ -20,6 +20,7 @@
 			form {
 				width: 300px;
 				margin: 0 auto;
+				vertical-align:middle;
 			}
 			.adminLogin input {
 				border:1px solid white;
@@ -27,7 +28,7 @@
 				color:white;
 				padding:10px;
 				margin:15px;
-				font-size:2.5em;
+				font-size:1.7em;
 			}
 		</style>
 	</head>
