@@ -17,5 +17,5 @@
 	
 	//include footer details
 	
-
+	//include closing tags
 ?>
