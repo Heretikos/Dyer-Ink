@@ -21,7 +21,6 @@
 				width: 300px;
 				margin: auto;
 				margin-top:15%;
-				margin-left:35%;
 			}
 			.adminLogin input {
 				border:1px solid white;
