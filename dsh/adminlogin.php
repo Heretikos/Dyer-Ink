@@ -20,7 +20,7 @@
 			form {
 				width: 300px;
 				margin: auto;
-				margin-top:35%;
+				margin-top:15%;
 				vertical-align:middle;
 			}
 			.adminLogin input {
@@ -30,6 +30,10 @@
 				padding:10px;
 				margin:15px;
 				font-size:1.7em;
+			}
+			.adminLogin input[type=submit] {
+				margin-right:15px;
+				margin-left:auto;
 			}
 		</style>
 	</head>
