@@ -24,8 +24,38 @@
 			}
 		}
 		
-		function uploadImage() {
+		function publish() {
+			$this->published = true;
+		}
+		
+		function unpublish() {
+			$this->published = false;
+		}
+		
+		function update() {
+			if(!$_POST['itemName'] == $this->name) {
+				setName();
+			}
 			
+			if(!$_POST['itemPrice'] == $this->price) {
+				setPrice();
+			}
+			
+			if(!$_POST['itemCategory'] == $this->category) {
+				setName();
+			}
+		}
+		
+		function uploadImage() {
+			$uploaddir = 'invImages/';
+			$uploadfile = $uploaddir . basename($_FILES['invImg']['name']);
+			
+			
+			if (move_uploaded_file($_FILES['invImg']['tmp_name'], $uploadfile)) {
+				echo "File was successfully uploaded.\n";
+			} else {
+				echo "something got broken!";
+			}
 		}
 		
 		function getAsJSON() {
