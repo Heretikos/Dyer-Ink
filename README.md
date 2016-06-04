@@ -3,11 +3,13 @@ Dyer Ink site
 
 ##Pseudocode TO-DO;
 
-* adminsettings.php
+* inventory.php
+* additem.php
+* categories.php
+* settings.php
 * shop.php
-* shopitem.php
+* viewitem.php
 * Shopping cart/checkout screen
 * html structure/includes
 * stylesheets
-* javascript for main page
 * Silly animations and things(?) - VERY optional

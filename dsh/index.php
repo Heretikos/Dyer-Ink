@@ -14,18 +14,27 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 		rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
-		
+		<meta name="viewport" content="width=65%; initial-scale=1.0" />
 		<style type="text/css">
 		html {
 			background-color:rgb(100,100,220);
 			font-family: sans-serif;
+			
+			background: url("http://www.superedo.net/fond-ecran/fond-ecran/Google%20Nexus/Google%20Nexus%205/google_nexus_5_088.jpg") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			
+			font-family: 'Wire One', sans-serif;
+
 		}
 			#logoutButton {
 				position:absolute;
 				top:10px;
 				right:10px;
 				text-decoration:none;
-				padding:15px 50px;
+				padding:10px 30px;
 				border:1px solid white;
 				border-radius:3px;
 				color:white;
@@ -36,18 +45,19 @@
 			.adminNavigation {
 				margin:auto;
 				text-align:center;
-				width: 70%;
-				margin-top:15%;
+				width: 60%;
+				margin-top:10%;
 			}
 			
 			.adminNavButton {
 				padding:30px;
-				margin: 0 15px;
+				margin: 15px;
 				border:1px solid white;
 				border-radius:10px;
 				display:inline-block;
 				color:white;
 				font-size:2em;
+				background-color:rgba(0,0,0,0.3);
 			}
 			.adminNavButton a {
 				color:white;
@@ -89,7 +99,7 @@
 				</a>
 			</div>
 			<div class="adminNavButton">
-				<a href="settings.php">
+				<a href="adminsettings.php">
 					<i class="material-icons md-max">settings</i><br />Settings
 				</a>
 			</div>
