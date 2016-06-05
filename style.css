@@ -3,7 +3,7 @@
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Amatic SC', cursive;
-	font-size:2em;
+	font-size:5em;
 }
 
 h1, h2 {
@@ -64,6 +64,7 @@ article {
 #social {
 	border:1px solid black;
 	float:left;
+	width:130px;
 }
 
 #sideNav {
@@ -71,8 +72,14 @@ article {
 	float:right;
 }
 
+#logo {
+	float:left;
+	position:absolute;
+}
+
 .socialButton {
 	border:1px solid black;
+	margin:20px;
 }
 
 .sidebarImage {
