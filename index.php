@@ -37,7 +37,7 @@
 				<a href="art.html"><img width="100" class="sidebarImg" src="http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png" /><br />Art</a><br />
 				<a href="sharks.html"><img width="100" class="sidebarImg" src="jaw.jpg" /><br />Sharks</a>
 			</aside>
-			<article>
+			<article id="mainpage">
 				<h2>The</h2>
 				<h2>Shark</h2>
 				<h2>Shop</h2>

@@ -85,6 +85,9 @@ aside a {
 article {
 	height:100%;
 	text-align:center;
+}
+
+article #mainpage {
 	background-image:url("magma.jpg");
 	background-repeat: no-repeat;
 	background-size:75%;
