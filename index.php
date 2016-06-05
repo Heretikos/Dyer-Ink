@@ -24,7 +24,7 @@
 				<a href="shop.php">Shop</a>
 				<a href="contact.php">Contact</a>
 				<a href="http://dyerink.com/wp/">Blog</a>
-				<a href="http://youtube.com/dyerink">Videos</a>
+				<a href="videos.html">Videos</a>
 			</nav>
 			<aside id="social">
 				<img class="socialButton" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-google-plus-128.png" width="70" /><br />
