@@ -6,7 +6,7 @@
 	<body>
 		<div id="content">
 			<img id="logo" src="http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png" width="150" />
-			<h2>Dyer Ink</h2>
+			<h1>Dyer Ink</h1>
 			<nav>
 				<a href="artist.html">Artist</a>
 				<a href="art.html">Art</a>
@@ -28,9 +28,12 @@
 				<a href="sharks.html"><img width="150" class="sidebarImg" src="http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png" /><br />Sharks</a>
 			</aside>
 			<article>
-				<h1>The</h1>
-				<h1>Shark</h1>
-				<h1>Shop</h1>
+				<h2>The</h2>
+				<h2>Shark</h2>
+				<h2>Shop</h2>
+				<a href="" class="featuredLink">Clothing</a>
+				<img id="enterButton" src="http://www.pngall.com/wp-content/uploads/2016/04/Enter-PNG-File.png" width="130" />
+				<a href="" class="featuredLink">One of a Kind</a>
 			</article>
 		</div>
 	</body>

@@ -1,13 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Amatic SC', cursive;
 	font-size:5em;
+	text-align:center;
+	margin-top:0.1em;
+	margin-bottom:0.7em;
 }
 
-h1, h2 {
-	text-align:center;
+h2 {
+	margin-bottom:0.3em;
+	font-size:4.5em;
+	position:relative;
+	left:50px;
 }
 
 body {
@@ -17,7 +24,6 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: 'Wire One', sans-serif;
 }
 
 nav {
@@ -25,17 +31,20 @@ nav {
 	text-align:center;
 	background-color:rgba(10,10,10,0.7);
 	padding:30px;
+	font-size:1.6em;
 }
 
 nav .activePage {
 	color:white;
 	font-weight:bold;
+	border-top:1px solid white;
 }
 
 nav a {
-	text-decoration:overline;
+	text-decoration:none;
 	color:silver;
-	padding:20px 20px;
+	padding:10px 20px;
+	border-top:1px solid silver;
 }
 
 aside {
@@ -45,6 +54,7 @@ aside {
 	background-color:rgba(100,100,100,0.7);
 	padding:10px;
 	text-align:center;
+	margin-top:7px;
 }
 
 aside a {
@@ -55,6 +65,7 @@ aside a {
 article {
 	border:1px solid black;
 	height:100%;
+	text-align:center;
 }
 
 #logo {
@@ -77,6 +88,20 @@ article {
 	position:absolute;
 }
 
+#enterButton {
+	position:relative;
+	left:90px;
+}
+
+.featuredLink {
+	font-size:2.3em;
+	text-decoration:none;
+	color:black;
+	position:relative;
+	left:90px;
+	top:-50px;
+}
+
 .socialButton {
 	border:1px solid black;
 	margin:20px;
@@ -86,4 +111,17 @@ article {
 	width:200px;
 	height:200px;
 	border:1px solid black;
+}
+
+.productListing {
+	margin-top:10px;
+	border:1px solid black;
+	width:40%;
+	vertical-align:top;
+	height:500px;
+	display:inline-block;
+}
+
+.price {
+	
 }
