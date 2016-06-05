@@ -3,7 +3,8 @@
 		<title>The Shark Shop</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-		   <?php include "contentHead.php"; ?>Dyer Ink</h1>
+		   <?php include "contentHead.php"; ?>
+		   <h1>Dyer Ink</h1>
 			<?php include "nav.php"; include "social.php" ?>
 			<article>
 				<div id="imageDisplay" class="productListing">
