@@ -7,15 +7,7 @@
 		<div id="content">
 			<img id="logo" src="http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png" width="150" />
 			<h1>Dyer Ink</h1>
-			<nav>
-				<a href="artist.html">Artist</a>
-				<a href="art.html">Art</a>
-				<a href="sharks.html">Sharks</a>
-				<a href="shop.php" class="activePage">Shop</a>
-				<a href="contact.php">Contact</a>
-				<a href="http://dyerink.com">Blog</a>
-				<a href="videos.html">Videos</a>
-			</nav>
+			<?php include "nav.php"; ?>
 			<article>
 				<div id="imageDisplay" class="productListing">
 					<img id="mainProductImage" width="320" src="http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png" />
