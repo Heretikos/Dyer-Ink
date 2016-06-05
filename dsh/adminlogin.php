@@ -65,7 +65,7 @@
 		require "adminmysqlcreds.php";
 		
 		// Create connection
-		$conn = new mysqli($servername, $dbusername, $dbpassword,$dbname);
+		$conn = new mysqli($servername, $dbusername, $dbpassword,$admindbname);
 	
 		// Check connection
 		if ($conn->connect_error) {
