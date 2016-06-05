@@ -10,13 +10,10 @@
 
 <html>
 	<head>
-		<title>The Shark Shop</title>
+		<title>Dyer Ink</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
-		<div id="content">
-			<img id="logo" src="http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png" width="150" />
-			<h1>Dyer Ink</h1>
+		   <?php include "contentHead.php"; ?>Dyer Ink</h1>
 			<?php include "nav.php"; include "social.php" ?>
 			<aside id="sideNav">
 				<a href="artist.html"><img width="100" class="sidebarImg" src="theartist.jpg" style="overflow:hidden;clip:rect(0px,0px,150px,150px)" /><br />Artist</a><br />
