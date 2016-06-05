@@ -13,7 +13,6 @@
 			die("Connection failed: " . $conn->connect_error);
 	} 
 	
-	
 	//fetch $_GET parameter
 	$publishID = $_GET["itemID"];
 	
