@@ -19,7 +19,7 @@ h2 {
 
 body {
 	font-family: 'Shadows Into Light', cursive;
-	background: url("thresher.jpg") no-repeat center center fixed; 
+	background: url("background2.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -28,7 +28,7 @@ body {
 }
  
  body:active {
-	 background-image:url("background2.jpg");
+	 background-image:url("background4.jpg");
 	 transition: background-image 0.5s;
  }
   
@@ -55,10 +55,10 @@ nav .activePage {
 
 nav a {
 	text-decoration:none;
-	color:silver;
+	color:gray;
 	padding:10px 20px;
 	border-top:1px solid silver;
-	transition:color 4s;
+	transition:color 7s;
 }
  
  nav a:hover {
@@ -67,7 +67,7 @@ nav a {
  }
 
 aside {
-	width:200px;
+	width:130px;
 	right:0px;
 	border:1px solid white;
 	background-color:rgba(100,100,100,0.4);
@@ -85,6 +85,10 @@ aside a {
 article {
 	height:100%;
 	text-align:center;
+	background-image:url("magma.jpg");
+	background-repeat: no-repeat;
+	background-size:75%;
+	background-position:center;
 }
 
 #logo {
@@ -94,7 +98,7 @@ article {
 #social {
 	border:1px solid white;
 	float:left;
-	width:100px;
+	width:70px;
 }
 
 #sideNav {
@@ -122,7 +126,8 @@ article {
 }
 
 .socialButton {
-	margin:20px;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 
 .sidebarImage {
