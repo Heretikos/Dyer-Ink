@@ -24,25 +24,26 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	transition: background-image 2s;
+	transition: background-image 0.5s;
 }
  
- body:hover {
+ body:active {
 	 background-image:url("background2.jpg");
-	 transition: background-image 3s;
+	 transition: background-image 0.5s;
  }
   
-body:active {
+/*body {
 	background-image:url("background1.jpg");
 	transition: background-image 1s;
-}
+}*/
 
 nav {
-	border:1px solid black;
+	border:1px solid white;
 	text-align:center;
-	background-color:rgba(10,10,10,0.7);
+	background-color:rgba(10,10,10,0.6);
 	padding:30px;
 	font-size:1.6em;
+	border-radius:4px;
 }
 
 nav .activePage {
@@ -66,13 +67,14 @@ nav a {
  }
 
 aside {
-	width:250px;
+	width:200px;
 	right:0px;
-	border:1px solid black;
-	background-color:rgba(100,100,100,0.7);
+	border:1px solid white;
+	background-color:rgba(100,100,100,0.4);
 	padding:10px;
 	text-align:center;
 	margin-top:7px;
+	border-radius:4px;
 }
 
 aside a {
@@ -81,23 +83,22 @@ aside a {
 }
 
 article {
-	border:1px solid black;
 	height:100%;
 	text-align:center;
 }
 
 #logo {
-	border:1px solid black;	
+	border:1px solid white;	
 }
 
 #social {
-	border:1px solid black;
+	border:1px solid white;
 	float:left;
-	width:130px;
+	width:100px;
 }
 
 #sideNav {
-	border:1px solid black;
+	border:1px solid white;
 	float:right;
 }
 
@@ -127,12 +128,12 @@ article {
 .sidebarImage {
 	width:200px;
 	height:200px;
-	border:1px solid black;
+	border:1px solid white;
 }
 
 .productListing {
 	margin-top:10px;
-	border:1px solid black;
+	border:1px solid white;
 	width:40%;
 	vertical-align:top;
 	height:500px;
