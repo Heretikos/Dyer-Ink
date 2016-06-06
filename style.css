@@ -151,3 +151,18 @@ article #mainpage {
 .price {
 	
 }
+
+.shopItem {
+	background-color:transparent;
+	box-shadow: 3px 7px 16px #888888;
+	padding:30px;
+	width:250px;
+	margin:50px;
+	display:inline-block;
+	transition:background-color 1s;
+}
+
+.shopItem:hover {
+	background-color:rgba(255,255,255,1);
+	transition:background-color 2s;
+}

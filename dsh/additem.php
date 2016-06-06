@@ -1,4 +1,15 @@
 <?php
+	/* 
+	TODOs:
+	* Fix update so that it doesn't increment the ID
+		- This will possibly involve creating an update() function in the inventoryClass
+	* Add a logout button
+	* Add a button to go back to the inventory
+	
+	
+	*/
+	
+	
 	//include PHP template with concept of InventoryItem
 	include "inventoryClass.php";
 	//require headers and shit

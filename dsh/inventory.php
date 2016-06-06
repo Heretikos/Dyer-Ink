@@ -1,5 +1,19 @@
 <?php
-
+	/* 
+	TODOs;
+	* Add a logout button
+	* Add a button to go back to the main page
+	* Style the "no items" text so that it is centered in the page
+	* Add pricing information to the desktop version of the display
+	* Add category information to desktop version
+	* Make the image display bigger
+	* Make the font size bigger for like, everything
+	* Remove the description from the mobile version of the display
+		and mess with element sizes until it looks good
+	
+	*/
+	
+	
 	//import template to check if admin is logged in
 	require "adminCheck.php";
 	

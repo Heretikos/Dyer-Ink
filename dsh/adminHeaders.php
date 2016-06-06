@@ -11,7 +11,7 @@
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
 			  background-size: cover;
-			  
+			  font-size:2em;
 			  font-family: 'Wire One', sans-serif;
 			}
 			form {
