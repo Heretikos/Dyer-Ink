@@ -40,6 +40,7 @@
 		<input type="number" name="itemPrice" step="0.01" placeholder="Price" value="<?php echo $row['price']; ?>" /><br />
 		<input type="text" name="imageURL" placeholder="URL of image" value="<?php echo $row['imageURL']; ?>" /><br />
 		<input type="text" name="description" placeholder="Description" value="<?php echo $row['description']; ?>" />
+		<input type="hidden" name="update" value="<?php echo $row['id']; ?>" />
 		<input type="submit" value="Save" />
 	</form>
 	
@@ -56,8 +57,19 @@
 	//and populate that object, then call its methods to push that info into database,
 	//then echo "item added" or something
 	elseif (isset($_POST['itemName'])) {
-		$newitem = new InventoryItem($_POST['itemName'],$_POST['itemPrice'],$_POST['description'],$_POST['imageURL'],true,0,0);
+		$name = filter_var($_POST['itemName'], FILTER_SANITIZE_MAGIC_QUOTES);
+		$desc = filter_var($_POST['description'], FILTER_SANITIZE_MAGIC_QUOTES);
+		$newitem = new InventoryItem($name,$_POST['itemPrice'],$desc,$_POST['imageURL'],true,0,0);
 		$newitem->addToDB();
+		if(isset($_POST['update'])) {
+			$sql = "DELETE FROM inventory WHERE id='" . $_POST['update'] . "';";
+			if ($conn->query($sql) === TRUE) {
+				echo "<h1>Item Updated successfully probably!</h1>";
+				echo "<script>t=setTimeout(window.location.href='inventory.php',5000);</script>";
+			} else {
+				echo "Error: " . $sql . "<br>" . $conn->error;
+			}
+		}
 		echo "<h1>Item Saved successfully probably!</h1>";
 		echo "<script>t=setTimeout(window.location.href='inventory.php',5000);</script>";
 	} else {
