@@ -29,16 +29,5 @@
 				<a href="shopitem.php"><img id="enterButton" src="http://www.pngall.com/wp-content/uploads/2016/04/Enter-PNG-File.png" width="130" /></a>
 				<a href="" class="featuredLink">One of a Kind</a>
 			</article>
-		</div>
-	</body>
-</html>
 
-<?php
-	
-	
-	//Bottom fixed footer, privacy policy link etc.
-	
-	//Closing tags
-	
-	
-?>
+<?php include "footer.php"; ?>

@@ -19,6 +19,7 @@
 					<button>Add to Cart</button>
 				</div>
 			</article>
-		</div>
-	</body>
-</html>
+			
+			
+
+<?php include "footer.php"; ?>
