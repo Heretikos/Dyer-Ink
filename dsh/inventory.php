@@ -16,19 +16,24 @@
 		<link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=65%, initial-scale=1.0" />
 		<style type="text/css">
-		html {
-			background-color:rgb(100,100,220);
-			font-family: sans-serif;
+			html {
+				background-color:rgb(100,100,220);
+				font-family: sans-serif;
+				
+				background: url("http://www.superedo.net/fond-ecran/fond-ecran/Google%20Nexus/Google%20Nexus%205/google_nexus_5_088.jpg") no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				
+				font-family: 'Wire One', sans-serif;
+	
+			}
 			
-			background: url("http://www.superedo.net/fond-ecran/fond-ecran/Google%20Nexus/Google%20Nexus%205/google_nexus_5_088.jpg") no-repeat center center fixed; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			
-			font-family: 'Wire One', sans-serif;
-
-		}
+			h1 {
+				text-align:center;
+				font-size:4em;
+			}
 			#logoutButton {
 				position:absolute;
 				top:10px;
@@ -40,6 +45,20 @@
 				color:white;
 				font-size:2em;
 				font-weight:bold;
+			}
+			
+			#addItemButton {
+				position:absolute;
+				top:30px;
+				left:57px;
+				text-decoration:none;
+				padding:10px 30px;
+				border:1px solid white;
+				border-radius:3px;
+				color:white;
+				font-size:2em;
+				font-weight:bold;
+				background-color:rgba(120,255,0,0.7);
 			}
 			
 			.adminNavigation {
@@ -83,10 +102,28 @@
 				box-shadow: 3px 7px 16px #888888;
 				padding:30px;
 				width:500px;
+				margin:50px;
+				transition:background-color 1s;
+			}
+			
+			.inventoryItem:hover {
+				background-color:rgba(255,255,255,1);
+				transition:background-color 2s;
 			}
 			
 			.inventoryItem img {
 				float:left;
+				margin-right:50px;
+			}
+			
+			@media (orientation: landscape) {
+				.inventoryItem {
+					background-color:rgba(255,255,255,0.7);
+					box-shadow: 3px 7px 16px #888888;
+					padding:30px;
+					width:85%;
+					margin:50px;
+				}
 			}
 		</style>
 	</head>
@@ -99,7 +136,7 @@
 		echo "<h1>Inventory</h1>";
 		
 		//Echo addItem button (just a link to /addItem.php really)
-		echo "<a href='addItem.php'>Add Item</a>";
+		echo "<a href='additem.php' id='addItemButton'>Add Item</a>";
 		
 		//connect to database, authenticate
 		require "adminmysqlcreds.php";
@@ -123,11 +160,13 @@
 				//If it's above zero, do an SQL query then, spit that shit out with a for() loop
 				while($row = $result->fetch_assoc()) {
 					//div, image with class that makes it float left, h2 with item name, p with details
-					echo "<div class='inventoryItem'><img src='' width='100' /><h2>" . $row["name"] . "</h2><p>Details about item</p></div>";
+					echo "<div class='inventoryItem'><img src='' width='100' /><h2>" . $row["id"] . " " . $row["name"] . "</h2><p>Details about item</p>";
 					//div inside of that with icons and ahrefs for deleting, editing,
 					//publish/unpublishing that item (using $_GET parameters in the URLs) with class
 					//that makes it invisible on mobile
-					echo  "<br>" . $row["id"];
+					echo "<div class='itemTools'><a href='additem.php?itemID=" . $row["id"] . "</a></div>";
+					
+					echo "</div>";
 					}
 		} else {
 				//if it's zero, echo "there's nothing in your inventory, click above to add an item!"
