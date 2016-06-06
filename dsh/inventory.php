@@ -102,8 +102,6 @@
 		//publish/unpublishing that item (using $_GET parameters in the URLs) with class
 		//that makes it invisible on mobile
 	//echo closing tags
-	
+	}
+	include "adminFooter.php";	
 ?>
-
-	</body>
-</html>
