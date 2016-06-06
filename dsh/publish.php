@@ -1,7 +1,9 @@
 <?php
-	
+
 	//Connect to mySQL database
 	require "adminmysqlcreds.php";
+	$title = "Publishing item to store...";
+	require "adminHeaders.php";
 	
 	$dbname = "tsubasag_DI_inventory";
 	

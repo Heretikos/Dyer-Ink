@@ -1,54 +1,8 @@
 <?php
 
 	//echo admin login stylesheet, headers, title
-	
+	require "adminHeaders.php";
 ?>
-<html>
-	<head>
-		<title>Administrator Login</title>
-		<link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=70%; initial-scale=1.0" />
-		<style type="text/css">
-			html { 
-			  background: url("http://www.superedo.net/fond-ecran/fond-ecran/Google%20Nexus/Google%20Nexus%205/google_nexus_5_088.jpg") no-repeat center center fixed; 
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
-			  
-			  font-family: 'Wire One', sans-serif;
-			}
-			form {
-				width: 500px;
-				margin: auto;
-				margin-top:15%;
-				text-align:right;
-			}
-			.adminLogin input {
-				border:1px solid white;
-				background-color:transparent;
-				color:white;
-				padding:10px;
-				margin:15px;
-				font-size:1.7em;
-			}
-			.adminLogin input[type=submit] {
-				padding:10px 32px;
-			}
-			.error {
-				color:red;
-				font-size:1.45em;
-				text-align:center;
-				margin:auto;
-				font-weight:bold;
-			}
-			h2 {
-				color:lime-green;
-				font-size:0.7em;
-			}
-		</style>
-	</head>
-	<body>
 
 <?php
 
@@ -128,7 +82,6 @@
 	}
 	
 	//closing tags
+	
+	require "adminFooter.php";
 ?>
-		
-	</body>
-</html>

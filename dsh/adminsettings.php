@@ -1,5 +1,7 @@
 <?php
+	$title = "Dyer Ink settings";
+	require "adminHeaders.php";
 	
-	echo "Admin settings page";
+	require "adminFooter.php";
 	
 ?>

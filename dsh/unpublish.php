@@ -2,6 +2,8 @@
 	
 	//Connect to mySQL database
 	require "adminmysqlcreds.php";
+	$title = "Unpublishing item to Drafts...";
+	require "adminHeaders.php";
 	
 	$dbname = "tsubasag_DI_inventory";
 	

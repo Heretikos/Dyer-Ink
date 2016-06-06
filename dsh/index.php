@@ -117,6 +117,7 @@
 		
 	} else {
 		//if they aren't, include the login form with all its glorious headers
+		$title = "Administrator Login"
 		require "adminlogin.php";
 	}
 	
