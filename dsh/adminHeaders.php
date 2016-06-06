@@ -3,7 +3,7 @@
 	<head>
 		<title><?php echo $title ?></title>
 		<link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=70%; initial-scale=1.0" />
+		<meta name="viewport" content="width=70%, initial-scale=1.0" />
 		<style type="text/css">
 			html { 
 			  background: url("http://www.superedo.net/fond-ecran/fond-ecran/Google%20Nexus/Google%20Nexus%205/google_nexus_5_088.jpg") no-repeat center center fixed; 

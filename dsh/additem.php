@@ -35,18 +35,20 @@
 					//Create the form and populate it with the appropriate values
 ?>
 	
-	<form action="addItem.php" method="POST">
-		<input type="text" name="itemName" placeholder="Item Name" /><br />
-		<input type="number" name="itemPrice" step="0.01" placeholder="Price" /><br />
-		<input type="text" name="imageURL" placeholder="URL of image" /><br />
-		<input type="text" name="description" placeholder="Description" />
+	<form action="additem.php" method="POST">
+		<input type="text" name="itemName" placeholder="Item Name" value="<?php echo $row['name']; ?>" /><br />
+		<input type="number" name="itemPrice" step="0.01" placeholder="Price" value="<?php echo $row['price']; ?>" /><br />
+		<input type="text" name="imageURL" placeholder="URL of image" value="<?php echo $row['imageURL']; ?>" /><br />
+		<input type="text" name="description" placeholder="Description" value="<?php echo $row['description']; ?>" />
+		<input type="submit" value="Save" />
 	</form>
 	
 <?php
 					}
 		} else {
 				//if it's zero, echo "there's nothing in your inventory, click above to add an item!"
-				echo "Item not found - perhaps it was deleted?";
+				echo "Item not found - perhaps it was deleted?<br />";
+				echo "<a href='inventory.php'>Click here to return to inventory</a>";
 		}
 	} 
 	
@@ -56,6 +58,21 @@
 	elseif (isset($_POST['itemName'])) {
 		$newitem = new InventoryItem($_POST['itemName'],$_POST['itemPrice'],$_POST['description'],$_POST['imageURL'],true,0,0);
 		$newitem->addToDB();
+		echo "<h1>Item Saved successfully probably!</h1>";
+		echo "<script>t=setTimeout(window.location.href='inventory.php',1000);</script>";
+	} else {
+?>
+
+
+<form action="additem.php" method="POST">
+	<input type="text" name="itemName" placeholder="Item Name" value="" /><br />
+	<input type="number" name="itemPrice" step="0.01" placeholder="Price" value=""/><br />
+	<input type="text" name="imageURL" placeholder="URL of image" value="" /><br />
+	<input type="text" name="description" placeholder="Description" value=""/>
+	<input type="submit" value="Save" />
+</form>
+
+<?php
 	}
 	
 	

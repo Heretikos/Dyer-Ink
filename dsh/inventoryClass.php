@@ -26,12 +26,25 @@
 		}
 		
 		function addToDB() {
-			$sql = "INSERT INTO inventory (name,price,description,imageURL,category,published) VALUES ($this->name,$this->price,$this->description,$this->image,$this->category,$this->published)";
+			require "adminmysqlcreds.php";
+			
+			$dbname = "tsubasag_DI_inventory";
+			
+			// Create connection
+			$conn = new mysqli($servername, $dbusername, $dbpassword,$dbname);
+		
+			// Check connection
+			if ($conn->connect_error) {
+					die("Connection failed: " . $conn->connect_error);
+			} 
+			$sql = "INSERT INTO inventory (name,price,description,imageURL,category,published) VALUES ('" . $this->name . "','" . $this->price. "','" . $this->description. "','" . $this->image. "','" . $this->category. "','" . $this->published . "');";
 			if ($conn->query($sql) === TRUE) {
 				echo "New record created successfully";
 			} else {
 				echo "Error: " . $sql . "<br>" . $conn->error;
 			}
+			
+			$conn->close();
 		}
 		
 		function publish() {

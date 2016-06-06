@@ -160,7 +160,7 @@
 				//If it's above zero, do an SQL query then, spit that shit out with a for() loop
 				while($row = $result->fetch_assoc()) {
 					//div, image with class that makes it float left, h2 with item name, p with details
-					echo "<div class='inventoryItem'><img src='" . $row['imageURL'] . "' width='100' /><h2>" . $row["id"] . " " . $row["name"] . "</h2><p>Details about item</p>";
+					echo "<div class='inventoryItem'><img src='" . $row['imageURL'] . "' width='100' /><h2>" . $row["id"] . " " . $row["name"] . "</h2><p>" . $row['description'] . "</p>";
 					//div inside of that with icons and ahrefs for deleting, editing,
 					//publish/unpublishing that item (using $_GET parameters in the URLs) with class
 					//that makes it invisible on mobile
