@@ -32,11 +32,17 @@
 		if ($result->num_rows > 0) {
 				//If it's above zero, do an SQL query then, spit that shit out with a for() loop
 				while($row = $result->fetch_assoc()) {
-					//div, image with class that makes it float left, h2 with item name, p with details
-					echo "<div class='inventoryItem'><img src='' width='100' /><h2>" . $row["id"] . " " . $row["name"] . "</h2><p>Details about item</p></div>";
-					//div inside of that with icons and ahrefs for deleting, editing,
-					//publish/unpublishing that item (using $_GET parameters in the URLs) with class
-					//that makes it invisible on mobile
+					//Create the form and populate it with the appropriate values
+?>
+	
+	<form action="addItem.php" method="POST">
+		<input type="text" name="itemName" placeholder="Item Name" /><br />
+		<input type="number" name="itemPrice" step="0.01" placeholder="Price" /><br />
+		<input type="text" name="imageURL" placeholder="URL of image" /><br />
+		<input type="text" name="description" placeholder="Description" />
+	</form>
+	
+<?php
 					}
 		} else {
 				//if it's zero, echo "there's nothing in your inventory, click above to add an item!"
@@ -48,7 +54,8 @@
 	//and populate that object, then call its methods to push that info into database,
 	//then echo "item added" or something
 	elseif (isset($_POST['itemName'])) {
-		$newitem = new InventoryItem();
+		$newitem = new InventoryItem($_POST['itemName'],$_POST['itemPrice'],$_POST['description'],$_POST['imageURL'],true,0,0);
+		$newitem->addToDB();
 	}
 	
 	

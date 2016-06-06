@@ -164,7 +164,7 @@
 					//div inside of that with icons and ahrefs for deleting, editing,
 					//publish/unpublishing that item (using $_GET parameters in the URLs) with class
 					//that makes it invisible on mobile
-					echo "<div class='itemTools'><a href='additem.php?itemID=" . $row["id"] . "</a></div>";
+					echo "<div class='itemTools'><a href='additem.php?itemID=" . $row["id"] . "'>Edit</a></div>";
 					
 					echo "</div>";
 					}

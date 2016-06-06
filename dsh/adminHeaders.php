@@ -20,7 +20,7 @@
 				margin-top:15%;
 				text-align:right;
 			}
-			.adminLogin input {
+			input {
 				border:1px solid white;
 				background-color:transparent;
 				color:white;
@@ -28,7 +28,7 @@
 				margin:15px;
 				font-size:1.7em;
 			}
-			.adminLogin input[type=submit] {
+			input[type=submit] {
 				padding:10px 32px;
 			}
 			.error {

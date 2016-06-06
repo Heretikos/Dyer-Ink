@@ -10,9 +10,10 @@
 		protected $category;
 		protected $published;
 		
-		function __construct($name,$price,$image,$inDB,$category,$published) {
+		function __construct($name,$price,$description,$image,$inDB,$category,$published) {
 			$this->name = $name;
 			$this->price = $price;
+			$this->description = $description;
 			$this->image = $image;
 			$this->category = $category;
 			$this->published = $published;
@@ -21,6 +22,15 @@
 			//add it to the database
 			if(!$inDB) {
 				uploadImage();
+			}
+		}
+		
+		function addToDB() {
+			$sql = "INSERT INTO inventory (name,price,description,imageURL,category,published) VALUES ($this->name,$this->price,$this->description,$this->image,$this->category,$this->published)";
+			if ($conn->query($sql) === TRUE) {
+				echo "New record created successfully";
+			} else {
+				echo "Error: " . $sql . "<br>" . $conn->error;
 			}
 		}
 		
