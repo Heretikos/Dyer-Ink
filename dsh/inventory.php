@@ -164,13 +164,13 @@
 					//div inside of that with icons and ahrefs for deleting, editing,
 					//publish/unpublishing that item (using $_GET parameters in the URLs) with class
 					//that makes it invisible on mobile
-					echo "<div class='itemTools'><a href='additem.php?itemID=" . $row["id"] . "'>Edit</a></div>";
+					echo "<div class='itemTools'><a href='additem.php?itemID=" . $row["id"] . "'>Edit</a> <a href='deleteItem.php?id=" . $row['id'] . "'>Delete</a></div>";
 					
 					echo "</div>";
 					}
 		} else {
 				//if it's zero, echo "there's nothing in your inventory, click above to add an item!"
-				echo "There's nothing in your inventory, click above to add an item!";
+				echo "<h2>There's nothing in your inventory, click above to add an item!</h2>";
 		}
 		$conn->close();
 		

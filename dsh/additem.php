@@ -59,7 +59,7 @@
 		$newitem = new InventoryItem($_POST['itemName'],$_POST['itemPrice'],$_POST['description'],$_POST['imageURL'],true,0,0);
 		$newitem->addToDB();
 		echo "<h1>Item Saved successfully probably!</h1>";
-		echo "<script>t=setTimeout(window.location.href='inventory.php',1000);</script>";
+		echo "<script>t=setTimeout(window.location.href='inventory.php',5000);</script>";
 	} else {
 ?>
 
