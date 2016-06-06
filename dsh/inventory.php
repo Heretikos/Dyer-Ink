@@ -14,7 +14,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 		rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
-		<meta name="viewport" content="width=65%; initial-scale=1.0" />
+		<meta name="viewport" content="width=65%, initial-scale=1.0" />
 		<style type="text/css">
 		html {
 			background-color:rgb(100,100,220);
@@ -77,6 +77,17 @@
 			/* Rules for using icons as white on a dark background. */
 			.material-icons.md-light { color: rgba(255, 255, 255, 1); }
 			.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+			
+			.inventoryItem {
+				background-color:rgba(255,255,255,0.7);
+				box-shadow: 3px 7px 16px #888888;
+				padding:30px;
+				width:500px;
+			}
+			
+			.inventoryItem img {
+				float:left;
+			}
 		</style>
 	</head>
 	<body>
@@ -91,17 +102,17 @@
 		echo "<a href='addItem.php'>Add Item</a>";
 		
 		//connect to database, authenticate
-		require "adminsqlcreds.php";
+		require "adminmysqlcreds.php";
 		
 		$dbname = "tsubasag_DI_inventory";
 		
-		$conn = new mysqli($servername, $username, $password,$dbname);
+		// Create connection
+		$conn = new mysqli($servername, $dbusername, $dbpassword,$dbname);
 	
 		// Check connection
 		if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
 		} 
-		
 		//get count of items/number of entries in inventory table
 		
 		$sql = "SELECT * FROM inventory";
@@ -112,6 +123,7 @@
 				//If it's above zero, do an SQL query then, spit that shit out with a for() loop
 				while($row = $result->fetch_assoc()) {
 					//div, image with class that makes it float left, h2 with item name, p with details
+					echo "<div class='inventoryItem'><img src='' width='100' /><h2>" . $row["name"] . "</h2><p>Details about item</p></div>";
 					//div inside of that with icons and ahrefs for deleting, editing,
 					//publish/unpublishing that item (using $_GET parameters in the URLs) with class
 					//that makes it invisible on mobile
