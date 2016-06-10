@@ -23,7 +23,7 @@
 					$sql = "SELECT * FROM inventory";
 					$result = $conn->query($sql);
 					$itemCount = $result->num_rows;
-				
+					//test
 					if ($itemCount > 0) {
 							//If it's above zero, do an SQL query then, spit that shit out with a for() loop
 							while($row = $result->fetch_assoc()) {
