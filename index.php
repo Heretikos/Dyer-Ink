@@ -23,7 +23,7 @@
 			</aside>
 			<article id="mainpage">
 				<h2 class="ssintro">The</h2>
-				<h2 class="ssintro">Shark</h2>
+				<h2 class="ssintro">Test</h2>
 				<h2 class="ssintro">Shop</h2>
 				<a href="" class="featuredLink">Clothing</a>
 				<a href="shopitem.php"><img id="enterButton" src="http://www.pngall.com/wp-content/uploads/2016/04/Enter-PNG-File.png" width="130" /></a>
