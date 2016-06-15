@@ -10,7 +10,7 @@
 				<?php 
 					require "mysqlcreds.php";
 					
-					$dbname = "tsubasag_DI_inventory";
+					$dbname = "inventory";
 					
 					// Create connection
 					$conn = new mysqli($servername, $dbusername, $dbpassword,$dbname);
