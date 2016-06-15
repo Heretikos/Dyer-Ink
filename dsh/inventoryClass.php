@@ -28,7 +28,7 @@
 		function addToDB() {
 			require "adminmysqlcreds.php";
 			
-			$dbname = "tsubasag_DI_inventory";
+			$dbname = "test";
 			
 			// Create connection
 			$conn = new mysqli($servername, $dbusername, $dbpassword,$dbname);
