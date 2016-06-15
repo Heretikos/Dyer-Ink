@@ -9,7 +9,7 @@
 		echo "<br /><a href='inventory.php'>Click here to go back to the inventory</a>";
 	} else {
 		//connect to MySQL database for inventory
-		$dbname = "tsubasag_DI_inventory";
+		$dbname = "test";
 		
 		// Create connection
 		$conn = new mysqli($servername, $dbusername, $dbpassword,$dbname);
