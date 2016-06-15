@@ -10,7 +10,7 @@
 				<?php 
 					require "mysqlcreds.php";
 					
-					$dbname = "inventory";
+					$dbname = "test";
 					
 					// Create connection
 					$conn = new mysqli($servername, $dbusername, $dbpassword,$dbname);
