@@ -5,7 +5,7 @@
 		//declare properties
 		protected $name;
 		protected $price;
-		protected $tags = [];
+		//protected $tags = [];
 		protected $imageURL;
 		protected $category;
 		protected $published;
