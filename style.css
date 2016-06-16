@@ -152,6 +152,7 @@ article #mainpage {
 	vertical-align:top;
 	height:500px;
 	display:inline-block;
+	background-color:rgba(10,140,255,0.4);
 }
 
 .price {
