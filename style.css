@@ -26,11 +26,11 @@ body {
 	background-size: cover;
 	transition: background-image 0.5s;
 }
- 
+ /*
  body:active {
 	 background-image:url("background4.jpg");
 	 transition: background-image 0.5s;
- }
+ }*/
   
 /*body {
 	background-image:url("background1.jpg");
