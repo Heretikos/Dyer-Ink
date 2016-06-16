@@ -28,7 +28,7 @@
 							//If it's above zero, do an SQL query then, spit that shit out with a for() loop
 							while($row = $result->fetch_assoc()) {
 								//div, image with class that makes it float left, h2 with item name, p with details
-								echo "<a href='shopItem.php?id=" . $row['id'] . "'><div class='shopItem'><img src='" . $row['imageURL'] . "' width='250' /><h3>" . $row["name"] . "</h3><p>" . $row['description'] . "</p>";
+								echo "<a href='shopitem.php?id=" . $row['id'] . "'><div class='shopItem'><img src='" . $row['imageURL'] . "' width='250' /><h3>" . $row["name"] . "</h3><p>" . $row['description'] . "</p>";
 								
 								
 								echo "</div></a>";
