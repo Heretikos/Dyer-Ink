@@ -23,7 +23,7 @@
 		$itemCount = $result->num_rows;
 		
 		echo $itemCount;
-		echo "has it updated4?";
+		echo "has it updated5?";
 		echo $row['value'];
 		if ($row['value'] == 1) {
 		?>
