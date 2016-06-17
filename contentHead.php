@@ -24,28 +24,30 @@
 		
 		echo $itemCount;
 		echo "has it updated6?";
-		echo $row['value'];
-		if ($row['value'] == 1) {
-		?>
-			
-			<style type="text/css">
-				.productListing, nav, #social {
-					border:1px solid white;
-				}
-			</style>
-			
-		<?php	
-		} else {
-		?>
-			
-			<style type="text/css">
-				.productListing, nav, #social {
-					border:0px solid transparent;
-				}
-			</style>
-			
-	
-		<?php
+		while($row = $result->fetch_assoc()) {
+			echo $row['value'];
+			if ($row['value'] == 1) {
+			?>
+				
+				<style type="text/css">
+					.productListing, nav, #social {
+						border:1px solid white;
+					}
+				</style>
+				
+			<?php	
+			} else {
+			?>
+				
+				<style type="text/css">
+					.productListing, nav, #social {
+						border:0px solid transparent;
+					}
+				</style>
+				
+		
+			<?php
+			}
 		}
 		$conn->close();
 		?>
