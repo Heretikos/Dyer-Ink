@@ -22,7 +22,7 @@
 		$result = $conn->query($sql);
 		$itemCount = $result->num_rows;
 		
-		echo "is this thing on";
+		echo "has it updated?";
 		echo $row['value'];
 		if ($row['value'] == 1) {
 		?>
