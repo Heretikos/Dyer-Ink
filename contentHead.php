@@ -22,6 +22,7 @@
 		$result = $conn->query($sql);
 		$itemCount = $result->num_rows;
 		
+		echo $row['bordersOn'];
 		if ($row['bordersOn'] == 1) {
 		?>
 			
@@ -44,6 +45,5 @@
 	
 		<?php
 		}
-		echo $row['bordersOn'];
 		$conn->close();
 		?>
