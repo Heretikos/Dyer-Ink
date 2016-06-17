@@ -23,7 +23,7 @@
 		$itemCount = $result->num_rows;
 		
 		echo $itemCount;
-		echo "has it updated6?";
+		echo "has it updated7?";
 		while($row = $result->fetch_assoc()) {
 			echo $row['value'];
 			if ($row['value'] == 1) {
