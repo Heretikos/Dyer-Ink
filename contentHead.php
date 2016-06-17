@@ -18,13 +18,13 @@
 				die("Connection failed: " . $conn->connect_error);
 		} 
 		
-		$sql = "SELECT * FROM settings;";
+		$sql = "SELECT * FROM settings WHERE setting='bordersOn';";
 		$result = $conn->query($sql);
 		$itemCount = $result->num_rows;
 		
 		echo "is this thing on";
-		echo $row['bordersOn'];
-		if ($row['bordersOn'] == 1) {
+		echo $row['value'];
+		if ($row['value'] == 1) {
 		?>
 			
 			<style type="text/css">
