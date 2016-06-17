@@ -22,6 +22,7 @@
 		$result = $conn->query($sql);
 		$itemCount = $result->num_rows;
 		
+		echo "is this thing on";
 		echo $row['bordersOn'];
 		if ($row['bordersOn'] == 1) {
 		?>
