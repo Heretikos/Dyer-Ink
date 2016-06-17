@@ -22,7 +22,7 @@
 		$result = $conn->query($sql);
 		$itemCount = $result->num_rows;
 		
-		if ($row['bordersOn'] = 1) {
+		if ($row['bordersOn'] == 1) {
 		?>
 			
 			<style type="text/css">
