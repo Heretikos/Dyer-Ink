@@ -18,7 +18,7 @@
 				die("Connection failed: " . $conn->connect_error);
 		} 
 		
-		$sql = "SELECT * FROM settings WHERE setting='bordersOn';";
+		$sql = "SELECT * FROM settings";
 		$result = $conn->query($sql);
 		$itemCount = $result->num_rows;
 		
