@@ -25,7 +25,7 @@
 		if ($itemCount > 0) {
 				//If it's above zero, do an SQL query then, spit that shit out with a for() loop
 			while($row = $result->fetch_assoc()) {
-				echo $row['value'];
+				
 				if ($row['value'] == 1) {
 				?>
 					
