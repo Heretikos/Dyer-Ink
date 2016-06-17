@@ -18,12 +18,12 @@
 				die("Connection failed: " . $conn->connect_error);
 		} 
 		
-		$sql = "SELECT FROM settings WHERE setting='bordersOn';";
+		$sql = "SELECT * FROM settings WHERE setting='bordersOn';";
 		$result = $conn->query($sql);
 		$itemCount = $result->num_rows;
 		
 		echo $itemCount;
-		echo "has it updated3?";
+		echo "has it updated4?";
 		echo $row['value'];
 		if ($row['value'] == 1) {
 		?>
