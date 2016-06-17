@@ -44,6 +44,6 @@
 	
 		<?php
 		}
-		
+		echo $row['bordersOn'];
 		$conn->close();
 		?>
