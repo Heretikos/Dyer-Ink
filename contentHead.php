@@ -23,7 +23,26 @@
 		$itemCount = $result->num_rows;
 		
 		if ($row['bordersOn'] = 1) {
-			echo "bordersOn!";
+		?>
+			
+			<style type="text/css">
+				.productListing, nav, #social {
+					border:1px solid white;
+				}
+			</style>
+			
+		<?php	
+		} else {
+		?>
+			
+			<style type="text/css">
+				.productListing, nav, #social {
+					border:0px solid transparent;
+				}
+			</style>
+			
+	
+		<?php
 		}
 		
 		$conn->close();
